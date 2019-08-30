@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-artifact-manager
 Version  : 2.0.6
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.1/maven-artifact-manager-2.0.1.jar
@@ -17,25 +17,24 @@ Source7  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manage
 Source8  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom
 Source9  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.jar
 Source10  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom
-Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
-Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.jar
-Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.pom
-Source14  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.jar
-Source15  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom
-Source16  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
-Source17  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
-Source18  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
-Source19  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.jar
-Source20  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.pom
-Source21  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
-Source22  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+Source11  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.5/maven-artifact-manager-2.0.5.pom
+Source12  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+Source13  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.jar
+Source14  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.pom
+Source15  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.jar
+Source16  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom
+Source17  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+Source18  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+Source19  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
+Source20  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.jar
+Source21  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.pom
+Source22  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+Source23  : https://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: mvn-maven-artifact-manager-data = %{version}-%{release}
 Requires: mvn-maven-artifact-manager-license = %{version}-%{release}
-BuildRequires : apache-maven
-BuildRequires : buildreq-mvn
 
 %description
 No detailed description available
@@ -97,41 +96,44 @@ cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.4
 cp %{SOURCE10} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.5
+cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.5/maven-artifact-manager-2.0.5.pom
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6
-cp %{SOURCE11} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7
-cp %{SOURCE12} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.jar
+cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7
-cp %{SOURCE13} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.pom
+cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.8
-cp %{SOURCE14} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.jar
+cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.8
-cp %{SOURCE15} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom
+cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.8/maven-artifact-manager-2.0.8.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9
-cp %{SOURCE16} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9
-cp %{SOURCE17} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0
-cp %{SOURCE18} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
+cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0/maven-artifact-manager-2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.0
-cp %{SOURCE19} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.jar
+cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.0
-cp %{SOURCE20} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.pom
+cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.0/maven-artifact-manager-2.2.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1
-cp %{SOURCE21} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
+cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1
-cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
+cp %{SOURCE23} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.pom
 
 
 %files
@@ -149,6 +151,7 @@ cp %{SOURCE22} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/maven
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.4/maven-artifact-manager-2.0.4.pom
+/usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.5/maven-artifact-manager-2.0.5.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.jar
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
 /usr/share/java/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.7/maven-artifact-manager-2.0.7.jar
